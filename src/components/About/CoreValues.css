@@ -1,0 +1,52 @@
+.core-values-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for section */
+    text-align: center;
+  }
+  
+  .core-values-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #003399; /* Primary color */
+    margin-bottom: 10px;
+  }
+  
+  .core-values-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .core-value-card {
+    padding: 20px;
+    height: 300px; /* Ensure uniform card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* White card background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .core-value-card:hover {
+    transform: translateY(-10px); /* Subtle lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .core-value-icon {
+    margin-bottom: 20px;
+  }
+  
+  .core-value-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #003399;
+    margin-bottom: 10px;
+  }
+  
+  .core-value-description {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+  
