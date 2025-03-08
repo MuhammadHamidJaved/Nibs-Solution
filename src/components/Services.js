@@ -1,13 +1,15 @@
 import React from "react";
-import { Card, Col, Row } from "antd";
+import { Card, Col, Row, Typography } from "antd";
+
+const { Title, Paragraph } = Typography;
 
 const Services = ({ title, description, services }) => {
   return (
     <div style={{ padding: "40px 20px", backgroundColor: "#f9f9f9" }}>
-      <h1 style={{ textAlign: "center", color: "#003399", marginBottom: "20px" }}>{title}</h1>
-      <p style={{ textAlign: "center", fontSize: "18px", color: "#333", marginBottom: "40px" }}>
+      <Title level={1} style={{ textAlign: "center", color: "#003399", marginBottom: "20px" }}>{title}</Title>
+      <Paragraph style={{ textAlign: "center", fontSize: "clamp(16px, 2vw, 18px)", color: "#333", marginBottom: "40px" }}>
         {description}
-      </p>
+      </Paragraph>
       <Row gutter={[24, 24]} justify="center">
         {services.map((service, index) => (
           <Col xs={24} sm={24} md={12} lg={8} key={index}>
@@ -25,36 +27,17 @@ const Services = ({ title, description, services }) => {
               <div style={{ marginBottom: "16px", fontSize: "32px", color: "#003399" }}>
                 {service.icon}
               </div>
-              <h3
-                style={{
-                  color: "#003399",
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  marginBottom: "10px",
-                }}
-              >
+              <Title level={3} style={{ color: "#003399", fontSize: "clamp(16px, 2vw, 18px)", fontWeight: "bold", marginBottom: "10px" }}>
                 {service.title}
-              </h3>
-              <p
-                style={{
-                  color: "#333",
-                  fontSize: "14px",
-                  lineHeight: "1.6",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 3, 
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
+              </Title>
+              <Paragraph style={{ color: "#333", fontSize: "clamp(14px, 2vw, 16px)", lineHeight: "1.6", overflow: "hidden", textOverflow: "ellipsis", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical" }}>
                 {service.description}
-              </p>
+              </Paragraph>
             </Card>
           </Col>
         ))}
       </Row>
 
-      
       <style jsx>{`
         @media (max-width: 768px) {
           h1 {

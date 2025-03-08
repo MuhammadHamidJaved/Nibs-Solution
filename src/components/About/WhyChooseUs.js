@@ -11,24 +11,25 @@ const WhyChooseUs = () => {
         <Col xs={24} md={12}>
           <img
             src="https://media.istockphoto.com/id/969985354/photo/why-choose-us-chalkboard-on-a-wooden-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=vK66tJDVSlN6jurRr-R8PqB10XIltEcw_lsOHiVPUoo="
-            alt="Consultation "
+            alt="Consultation"
             style={{
-              width: '90%',
+              width: '100%',
               borderRadius: '8px',
               border: '2px solid #003399',
               objectFit: 'cover',
-              height: '350px', 
+              height: 'auto',
+              maxHeight: '350px',
             }}
           />
         </Col>
         <Col xs={24} md={12} style={{ display: 'flex', alignItems: 'center' }}>
           <div>
-            <Paragraph style={{ fontSize: '20px', color: '#000',fontFamily: 'Times New Roman, serif' }}>
-            Choose us to empower your business with cutting-edge solutions that combine innovation, security, and efficiency. From harnessing AI and automation to streamline operations and deliver custom-tailored models, to ensuring robust cybersecurity frameworks that protect your sensitive data, we are committed to excellence.Our expertise spans following areas:
+            <Paragraph style={{ fontSize: '16px', color: '#000', fontFamily: 'Times New Roman, serif' }}>
+              Choose us to empower your business with cutting-edge solutions that combine innovation, security, and efficiency. From harnessing AI and automation to streamline operations and deliver custom-tailored models, to ensuring robust cybersecurity frameworks that protect your sensitive data, we are committed to excellence. Our expertise spans the following areas:
             </Paragraph>
-            <ul style={{ paddingLeft: '20px', listStyleType: 'none',fontFamily: 'Times New Roman, serif' }}>
+            <ul style={{ paddingLeft: '20px', listStyleType: 'none', fontFamily: 'Times New Roman, serif' }}>
               {services.map((service, index) => (
-                <li key={index} style={{ marginBottom: '10px', position: 'relative', paddingLeft: '25px', fontSize: '18px', color: '#003399',fontFamily: 'Times New Roman, serif' }}>
+                <li key={index} style={{ marginBottom: '10px', position: 'relative', paddingLeft: '25px', fontSize: '16px', color: '#003399', fontFamily: 'Times New Roman, serif' }}>
                   <span style={{
                     width: '8px',
                     height: '8px',

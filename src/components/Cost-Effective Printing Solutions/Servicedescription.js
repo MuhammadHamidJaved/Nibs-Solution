@@ -1,8 +1,8 @@
 import React from 'react';
 import { Typography, Row, Col } from 'antd';
-import DNCR from "../../Images/DNCR.jpeg";
+import DNCR from "../../Images/Print.jpeg";
 
-const { Title, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 const ComplianceServices = () => {
   return (
@@ -12,9 +12,9 @@ const ComplianceServices = () => {
           <Title level={1} style={{ color: '#003399', marginTop: '10px', fontFamily: 'Times New Roman, serif' }}>
             Service description
           </Title>
-          <Text style={{ display: 'block', marginBottom: '20px', maxWidth: '600px', margin: '20px auto', color: '#000', fontSize: '20px', fontFamily: 'Times New Roman, serif' }}>
-            Our DNCR compliance services are designed to help your organization navigate Do-Not-Call regulations effortlessly, ensuring that your business operates within the law while enhancing customer relationships and minimizing compliance risks.
-          </Text>
+          <Paragraph style={{ display: 'block', marginBottom: '20px', maxWidth: '600px', margin: '20px auto', color: '#000', fontSize: 'clamp(16px, 2vw, 20px)', fontFamily: 'Times New Roman, serif' }}>
+            Reduce printing costs while maintaining high-quality output with our cost-effective printing solutions. We help businesses optimize their printing infrastructure for efficiency and savings.
+          </Paragraph>
         </Col>
         <Col xs={24} md={12}>
           <img
@@ -26,7 +26,6 @@ const ComplianceServices = () => {
               border: '2px solid #003399',
               objectFit: 'cover',
               height: 'auto',
-              maxHeight: '300px',
             }}
           />
         </Col>

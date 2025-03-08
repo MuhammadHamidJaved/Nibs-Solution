@@ -1,6 +1,8 @@
 import React from "react";
-import { Row, Col, Card } from "antd";
+import { Row, Col, Card, Typography } from "antd";
 import { CheckCircleOutlined } from "@ant-design/icons";
+
+const { Title, Paragraph } = Typography;
 
 const reasons = [
   {
@@ -48,12 +50,12 @@ const reasons = [
 const HomePage = () => {
   return (
     <div style={{ padding: "40px 20px", backgroundColor: "#f9f9f9" }}>
-      <h1 style={{ textAlign: "center", color: "#003399", marginBottom: "20px" }}>
+      <Title level={1} style={{ textAlign: "center", color: "#003399", marginBottom: "20px" }}>
         Why Choose Nibs Solution?
-      </h1>
-      <p style={{ textAlign: "center", fontSize: "18px", color: "#333", marginBottom: "40px" }}>
+      </Title>
+      <Paragraph style={{ textAlign: "center", fontSize: "clamp(16px, 2vw, 18px)", color: "#333", marginBottom: "40px" }}>
         Discover the benefits of working with us and how our expertise can drive your business forward.
-      </p>
+      </Paragraph>
       <Row gutter={[24, 24]} justify="center">
         {reasons.map((reason, index) => (
           <Col xs={24} sm={12} md={8} key={index}>
@@ -75,26 +77,12 @@ const HomePage = () => {
               >
                 <CheckCircleOutlined />
               </div>
-              <h3
-                style={{
-                  color: "#003399",
-                  fontSize: "18px",
-                  fontWeight: "bold",
-                  marginBottom: "10px",
-                }}
-              >
+              <Title level={3} style={{ color: "#003399", fontSize: "clamp(16px, 2vw, 18px)", fontWeight: "bold", marginBottom: "10px" }}>
                 {reason.title}
-              </h3>
-              <p
-                style={{
-                  color: "#333",
-                  fontSize: "14px",
-                  lineHeight: "1.6",
-                  paddingBottom: "20px",
-                }}
-              >
+              </Title>
+              <Paragraph style={{ color: "#333", fontSize: "clamp(14px, 2vw, 16px)", lineHeight: "1.6", paddingBottom: "20px" }}>
                 {reason.description}
-              </p>
+              </Paragraph>
             </Card>
           </Col>
         ))}

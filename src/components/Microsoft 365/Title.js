@@ -9,10 +9,10 @@ const HeaderSection = () => {
       <Row justify="center">
         <Col xs={24} sm={20} md={16} lg={12} xl={10}>
           <Title level={1} style={{ color: '#fff', marginTop: '10px', fontFamily: 'Times New Roman, serif' }}>
-            Advanced Network Infrastructure
+            Microsoft Office 365 / Google Workspace Support
           </Title>
           <Text style={{ display: 'block', marginBottom: '20px', color: '#fff', fontSize: '22px', fontFamily: 'Times New Roman, serif' }}>
-            Empower your business with reliable, scalable, and cutting-edge telecom and network infrastructure solutions.
+            Seamless cloud-based collaboration and productivity solutions to enhance business efficiency, ensuring smooth integration, security, and ongoing technical support.
           </Text>
           <Button type="primary" size="large" style={{ backgroundColor: '#000', borderColor: '#003399', marginTop: '0px', fontFamily: 'Times New Roman, serif' }}>
             Free Consultation Today

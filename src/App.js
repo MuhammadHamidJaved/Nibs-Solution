@@ -11,6 +11,13 @@ import DigitalDisplay from "./pages/DigitalDisplay"
 import DNCR from './pages/DNCRCompliance';
 import TelecomNetwork from './pages/TelecomNetworkInfrastructure';
 import CCTVFacial from './pages/CCTVFacialRecognition';
+import Microsoft365 from './pages/Microsoft365';
+import AMC from './pages/AMC';
+import Cloud from './pages/Cloud';
+import ITDevices from './pages/ITDevices';
+import Pricing from './pages/Pricing';
+import CostEffective from './pages/CostEffective'
+import ISP from './pages/ISPSupport'
 
 
 function App() {
@@ -27,6 +34,13 @@ function App() {
         <Route path="/DNCR" element={<DNCR />} />
         <Route path="/about" element={<About />} /> 
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Microsoft-GoogleSupport" element={<Microsoft365 />} />
+        <Route path="/AMC" element={<AMC />} />
+        <Route path="/cloud-based-telecommunication" element={<Cloud />} />
+        <Route path="/IT-devices" element={<ITDevices />} />
+        <Route path="/Competitive-Pricing" element={<Pricing />} />
+        <Route path="/Cost-Effective-Printing" element={<CostEffective />} />
+        <Route path="/ISP" element={<ISP />} />
       </Routes>
       <Footer />
     </Router>

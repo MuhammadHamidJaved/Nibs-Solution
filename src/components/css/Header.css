@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 45px 100px;
-  position: fixed;
+  padding: 0px 50px;
+  position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #fff;
@@ -11,6 +11,8 @@
 
 .Header img {
   margin-right: auto;
+  aspect-ratio: 1.2/1;
+  
 }
 
 .Header .ant-menu {
@@ -30,10 +32,12 @@
   font-size: 1.4em;
 }
 
-.ant-menu-dark .ant-menu-item {
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-submenu{
   color: #0066cc !important;
   transition: all 0.3s ease;
-  font-size: 1.3em;
+  font-size: calc(1em + 0.1vw);
+  width: calc(100% / 4);
 }
 
 .ant-menu-dark .ant-menu-item:hover,
@@ -41,7 +45,7 @@
   color: #0275e9 !important;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.2) !important;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 
 .ant-menu-submenu-title {
@@ -76,4 +80,46 @@
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.3) !important;
   font-size: 1.2em;
+}
+
+@media (width < 900px) {
+   .Header .ant-menu .ant-menu-title-content {
+    display: none;
+   }
+  .Header .ant-menu .ant-menu-item-icon {
+    font-size: 1.4em;
+  }
+
+  .ant-menu-sub .ant-menu-item {
+    font-size: 1em;
+  }
+  
+}
+
+@media (width < 550px) {
+  .Header .ant-menu .ant-menu-title-content {
+   display: none;
+  }
+ .Header .ant-menu .ant-menu-item-icon {
+   font-size: 1.4em;
+ }
+
+ .ant-menu-sub .ant-menu-item {
+   font-size: 0.7em;
+ }
+ 
+}
+
+@media (width < 350px) {
+  .Header .ant-menu .ant-menu-title-content {
+   display: none;
+  }
+ .Header .ant-menu .ant-menu-item-icon {
+   font-size: 1.4em;
+ }
+
+ .ant-menu-sub .ant-menu-item {
+   font-size: 0.5em;
+ }
+ 
 }

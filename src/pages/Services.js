@@ -2,6 +2,14 @@ import React from "react";
 import { Row, Col, Card } from "antd";
 import { useNavigate } from "react-router-dom";
 import "../components/css/Services.css"; 
+import img0 from "../Images/MS.jpeg";
+import img1 from "../Images/AMC.webp";
+import img2 from "../Images/device.jpeg";
+import img3 from "../Images/CP.png";
+import img4 from "../Images/ISP.jpeg";
+import img5 from "../Images/Cloud.jpeg";
+import img6 from "../Images/Print.jpeg";
+
 
 const { Meta } = Card;
 
@@ -10,7 +18,7 @@ const array = [
     key: "0",
     label: "Database Management",
     children:
-      "In today’s data-driven world, efficient database management is critical to business success. Our comprehensive database management solutions are designed to streamline your data processes, ensure integrity, and enhance scalability for seamless business growth.",
+      "Efficient database management solutions to streamline data processes, ensure integrity, and enhance scalability.",
     link: "/Database-Management",
     img: "https://media.istockphoto.com/id/2073120208/photo/crm-customer-relationship-management-concept-global-business-customer-network-technology-data.jpg?s=612x612&w=0&k=20&c=_T3U2gDvk1OhKnTLJ3Ekdzrew9VXGJDPJe9sF7MS41M=",
   },
@@ -18,15 +26,15 @@ const array = [
     key: "1",
     label: "DNCR Compliance Services",
     children:
-      "Maintaining compliance with Do-Not-Call (DNC) regulations is essential for businesses to build trust, avoid penalties, and foster positive customer relationships. Our DNCR compliance services are designed to help your organization navigate these regulations effortlessly while enhancing operational efficiency.",
+      "Navigate Do-Not-Call regulations effortlessly with our DNCR compliance services, enhancing operational efficiency.",
     link: "/DNCR",
     img: "https://img.freepik.com/premium-photo/compliance-rule-law-regulation-graphic-interface-business-quality-policy_31965-16023.jpg",
   },
   {
     key: "2",
-    label: "CCTV and Facial Recognition Systems",
+    label: "CCTV/Facial Recognition Systems",
     children:
-      "Enhance the security and efficiency of your operations with our advanced CCTV and facial recognition solutions. Designed to meet the evolving needs of modern businesses, our systems provide comprehensive surveillance, seamless access control, and intelligent monitoring capabilities.",
+      "Advanced CCTV and facial recognition solutions for comprehensive surveillance and intelligent monitoring.",
     link: "/CCTVFacialRecognition",
     img: "https://media.istockphoto.com/id/1168365129/photo/authentication-by-facial-recognition-concept-biometric-security-system.jpg?s=612x612&w=0&k=20&c=PYcoBVyeVF5CNR4m6BAWbteF3Cvo2DxOURHMYGglTx0=",
   },
@@ -34,17 +42,73 @@ const array = [
     key: "3",
     label: "Advanced Network Infrastructure",
     children:
-      "Empower your business with reliable, scalable, and cutting-edge telecom and network infrastructure solutions. We design and implement advanced systems that ensure seamless connectivity, optimal performance, and round-the-clock support to keep your operations running smoothly.",
+      "Reliable, scalable telecom and network infrastructure solutions for seamless connectivity and optimal performance.",
     link: "/AdvancedNetworkInfrastructure",
     img: "https://t3.ftcdn.net/jpg/09/27/16/78/360_F_927167869_BtuhDRiKXyEI1MSN2MvvP89hJHX2Dtm8.jpg",
   },
   {
     key: "4",
-    label: "Seamless Digital Display Integration",
+    label: "Digital Display Integration",
     children:
-      "Transform the way you communicate, engage, and captivate your audience with our seamless digital display integration services. From immersive advertising to interactive information sharing, our solutions are designed to elevate your brand visibility and enhance customer experiences.",
+      "Seamless digital display integration services to elevate brand visibility and enhance customer experiences.",
     link: "/Display-Integration",
     img: "https://www.shutterstock.com/image-photo/integrated-document-solutions-online-system-260nw-2352136125.jpg",
+  },
+  {
+    key: "5",
+    label: "Office/ Google Workspace Support",
+    children:
+      "Seamless cloud-based collaboration and productivity solutions to enhance business efficiency, ensuring smooth integration, security, and ongoing technical support.",
+    link: "/Microsoft-GoogleSupport",
+    img: img0,
+  },
+  {
+    key: "6",
+    label: "AMC for IT Work",
+    children:
+      "Proactive IT maintenance and support services to minimize downtime, optimize system performance, and ensure business continuity with 24/7 assistance.",
+    link: "/AMC",
+    img: img1,
+  },
+  {
+    key: "7",
+    label: "IT Device Procurement",
+    children:
+      "Reliable sourcing and procurement of high-quality IT hardware, ensuring businesses get the best technology solutions at competitive prices with expert setup and support.",
+    link: "/IT-devices",
+    img: img2,
+  },
+  {
+    key: "8",
+    label: "Competitive Pricing & Services",
+    children:
+      "Cost-effective IT solutions tailored to your business needs, offering high-quality services with transparent pricing and dedicated customer support.",
+    link: "/Competitive-Pricing",
+    img: img3,
+  },
+  {
+    key: "9",
+    label: "Cloud-Based Telecommunication",
+    children:
+      "Scalable and flexible cloud telecom solutions, including VoIP, cloud PBX, and advanced communication tools, ensuring seamless business connectivity.",
+    link: "/cloud-based-telecommunication",
+    img: img5,
+  },
+  {
+    key: "10",
+    label: "Cost-Effective Printing Solutions",
+    children:
+      "Optimized printing solutions designed to reduce operational costs while maintaining high-quality output, secure document printing, and workflow efficiency.",
+    link: "/Cost-Effective-Printing",
+    img: img6,
+  },
+  {
+    key: "11",
+    label: "ISP Support for Etisalat / DU",
+    children:
+      "Expert assistance for ISP selection, setup, and troubleshooting to ensure high-speed, reliable internet connectivity for smooth business operations.",
+    link: "/ISP",
+    img: img4,
   },
 ];
 

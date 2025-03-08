@@ -12,7 +12,7 @@ const NetworkInfrastructure = () => {
           <Title level={1} style={{ color: '#003399', marginTop: '10px', fontFamily: 'Times New Roman, serif' }}>
             Service description
           </Title>
-          <Text style={{ display: 'block', marginBottom: '20px', maxWidth: '600px', margin: '20px auto', color: '#000', fontSize: '20px', fontFamily: 'Times New Roman, serif' }}>
+          <Text style={{ display: 'block', marginBottom: '20px', maxWidth: '100%', margin: '20px auto', color: '#000', fontSize: '20px', fontFamily: 'Times New Roman, serif' }}>
             We offer advanced telecom and network infrastructure solutions that empower businesses with reliable connectivity, ensuring optimal performance and uninterrupted operations with round-the-clock support.
           </Text>
         </Col>
@@ -21,11 +21,12 @@ const NetworkInfrastructure = () => {
             src={ANI}
             alt="Network Infrastructure"
             style={{
-              width: '90%',
+              width: '100%',
               borderRadius: '8px',
               border: '2px solid #003399',
               objectFit: 'cover',
-              height: '300px', 
+              height: 'auto',
+              maxHeight: '300px',
             }}
           />
         </Col>
